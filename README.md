@@ -7,7 +7,7 @@
 * Dans le répertoire `array-map-filter`, lancer `npm install`
 
 ## Usage
-
+s
 **Absolument lire** la partie sur "réactiver les tests", ci-dessous !
 
 * Il y a trois séries d'exercices, situées dans `map`, `filter`, et `filter-map`.
