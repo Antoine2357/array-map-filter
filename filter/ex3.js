@@ -22,9 +22,27 @@ Sortie attendue:
   ['Bran Stark', 'Arya Stark', 'Sansa Stark']
 
  */
+tableau = [
+  'Bran Stark',
+  'Cersei Lannister',
+  'Sandor Clegane',
+  'Arya Stark',
+  'Yara Greyjoy',
+  'Sansa Stark'
+]
+
+
 
 function keepStarks(names) {
+let result = names.filter(function(split){
+  return split.split(" ")[1]==="Stark";
+})
+  return result 
 }
+ 
+
+console.log (keepStarks(tableau))
+
 
 // Ne pas modifier l'export
-module.exports = keepStarks;
+//module.exports = keepStarks;

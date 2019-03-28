@@ -20,10 +20,24 @@ En sortie: [
 ]
 
  */
+let tableau =   [
+  'Chicken',
+  'Bacon',
+  'Tofu',
+  'Mayonnaise'
+]
 
 function getStringsLength(strings) {
+  for (i=0 ; i< strings.length ; i++){
+    mot = strings.length
+     console.log( strings[i]+" contains " + mot + "characters") 
+  }
+
 }
 
+
+getStringsLength(tableau)
+//`${tableau[i]} contains ${tableau[i].length} characters`
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node map/ex1
 // console.log(getStringsLength(['Cat', 'Lion', 'Tiger', 'Jaguar', 'Leopard']));

@@ -15,8 +15,18 @@ Exemple d'entrée:
 
  */
 
+let tableau = [-12, -10, -7, -1, 5, 8, 11, 15, 20, 27]
+let argument = 5 
+
 function getMultiplesOf(numbers, n) {
+  return numbers.filter((element)=> {
+    return element % n === 0
+
+  
+})
 }
+
+console.log(getMultiplesOf(tableau,argument))
 
 // Ne pas modifier l'export
 module.exports = getMultiplesOf;

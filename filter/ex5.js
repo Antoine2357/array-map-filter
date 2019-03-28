@@ -37,9 +37,26 @@ Exemple d'entrée:
 
 
  */
+let tableau =   [
+  'Mad Max: Fury Road',
+  'Interstellar',
+  'Revenge of the Nerds',
+  'Revenge of the Pink Panther',
+  'Star Wars: Episode I - The Phantom Menace',
+  'Star Wars: Episode II - Attack of the Clones',
+  'Star Wars: Episode III - Revenge of the Sith'
+]
+
+let recherche =  'revenge'
 
 function searchWordFilter(items, search) {
+  let result = items.filter (function(mySearch){
+    let searchToUpper=search.charAt(0).toUpperCase() + search.substr(1);
+    return mySearch.includes(searchToUpper);
+  })
+  return result;
 }
 
+console.log(searchWordFilter(tableau , recherche))
 // Ne pas modifier l'export
 module.exports = searchWordFilter;

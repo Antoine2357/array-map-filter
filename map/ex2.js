@@ -41,10 +41,39 @@ En sortie: [
 ]
 
  */
-
+foods =   [
+  {
+    food: 'Bacon',
+    isVegetarian: false
+  },
+  {
+    food: 'Sausage',
+    isVegetarian: false
+  },
+  {
+    food: 'Tofu',
+    isVegetarian: true
+  },
+  {
+    food: 'Chick Pea',
+    isVegetarian: true
+  }
+]
 function getFoodCategories(foods) {
+  resultat = []
+  for (i=0 ; i < foods.length ; i++){
+    if ( foods[i].isVegetarian == true){
+      resultat[i]= (`${foods[i].food} is suitable for vegetarians`)
+    }
+    else if ( foods[i].isVegetarian == false){
+      resultat[i]= (`${foods[i].food} is not suitable for vegetarians`)
+    }
+   }
+   return ( resultat)
 }
 
+
+console.log(getFoodCategories(foods))
 
 
 // Ne pas modifier l'export
