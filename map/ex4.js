@@ -58,8 +58,8 @@ function getCirclesProperties(radiuses) {
   for (i=0 ; i< radiuses.length ; i++){
       sortie[i]={};
       sortie[i].radius = radiuses[i];
-      sortie[i].circumference = (2 * Math.PI * tableau[i] ).toFixed(3);
-      sortie[i].surface = ( Math.PI * tableau[i] * tableau[i]).toFixed(3);
+      sortie[i].circumference = (2 * Math.PI * radiuses[i] ).toFixed(3);
+      sortie[i].surface = ( Math.PI * radiuses[i] * radiuses[i]).toFixed(3);
   }
   return sortie;
 }

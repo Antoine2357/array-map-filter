@@ -45,4 +45,4 @@ console.log (keepStarks(tableau))
 
 
 // Ne pas modifier l'export
-//module.exports = keepStarks;
+module.exports = keepStarks;
